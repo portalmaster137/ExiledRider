@@ -20,7 +20,7 @@ namespace ExiledRider
 
         public override void OnEnabled()
         {
-            harmonyInstance = new Harmony($"com.{nameof(CustomItems)}.galaxy-{DateTime.Now.Ticks}");
+            harmonyInstance = new Harmony($"com.{nameof(ExiledRider)}.porta-{DateTime.Now.Ticks}");
             harmonyInstance.PatchAll();
             Log.Info("Patch done");
             Log.Info("Loading Item Handlers");
