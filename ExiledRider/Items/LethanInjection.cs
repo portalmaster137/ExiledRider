@@ -35,10 +35,7 @@ namespace ExiledRider.Items
 
             },
         };
-        
-        [Description("Whether the Lethal Injection should always kill the user, regardless of if they stop SCP-096's enrage.")]
-        public bool KillOnFail { get; set; } = true;
-        
+
         protected override void SubscribeEvents()
         {
             Player.UsingItem += OnUsingItem;
